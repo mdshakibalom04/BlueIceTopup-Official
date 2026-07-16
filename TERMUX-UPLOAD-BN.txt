@@ -1,0 +1,50 @@
+BLUEICETOPUP OFFICIAL — TERMUX দিয়ে GITHUB UPLOAD
+
+১) ZIP ফাইল Download করে Extract করুন।
+
+২) Termux-এ চালান:
+
+cd /storage/emulated/0/Download/BlueIceTopup_Official_V2_Correct_GitHub_Project/BlueIceTopup_Official
+
+ls -a
+
+এখানে .github, app, build.gradle, settings.gradle দেখা উচিত।
+
+৩) Git install না থাকলে:
+
+pkg install git -y
+
+৪) Git setup:
+
+git init
+git branch -M main
+git config user.name "mdshakibalom04"
+git config user.email "mdshakibalom04@gmail.com"
+git add .
+git commit -m "Upload correct BlueIceTopup Android project"
+
+৫) GitHub repository সংযুক্ত করুন:
+
+git remote remove origin 2>/dev/null
+git remote add origin https://github.com/mdshakibalom04/BlueIceTopup-Official.git
+
+৬) Push করুন:
+
+git push -u origin main --force
+
+GitHub login চাইলে:
+Username: mdshakibalom04
+Password: GitHub password নয়—নিজের Personal Access Token paste করবেন।
+Token কাউকে পাঠাবেন না।
+
+৭) Push শেষ হলে:
+GitHub > BlueIceTopup-Official > Actions > Build Android APK
+
+Workflow push-এর সাথে নিজে থেকেই শুরু হওয়ার কথা।
+না হলে:
+Build Android APK > Run workflow > Run workflow
+
+৮) Build সফল হলে:
+Completed run > Artifacts > BlueIceTopup-Official-APK
+ZIP download করুন।
+ZIP extract করে app-debug.apk install করুন।

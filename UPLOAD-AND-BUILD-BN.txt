@@ -1,0 +1,23 @@
+BLUEICETOPUP OFFICIAL — GITHUB ACTIONS APK BUILD
+
+Repository:
+https://github.com/mdshakibalom04/BlueIceTopup-Official
+
+UPLOAD:
+1) ZIP Extract করুন।
+2) GitHub repository খুলুন।
+3) Add file > Upload files।
+4) BlueIceTopup_Official_Android ফোল্ডারের ভেতরের সব ফাইল upload করুন।
+5) Commit changes চাপুন।
+
+APK BUILD:
+1) Actions tab খুলুন।
+2) Build Android APK নির্বাচন করুন।
+3) Run workflow চাপুন।
+4) Build শেষ হওয়া পর্যন্ত অপেক্ষা করুন।
+5) Artifacts থেকে BlueIceTopup-Official-APK download করুন।
+6) Download ZIP extract করে app-debug.apk install করুন।
+
+গুরুত্বপূর্ণ:
+- .github ফোল্ডার upload না হলে APK build হবে না।
+- APK build GitHub server-এ হবে; ফোনে AndroidIDE/SDK লাগবে না।
